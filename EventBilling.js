@@ -44,7 +44,12 @@ function addPrice()
 };
 
  
+<<<<<<< HEAD
 //update function created by veeresh 
+=======
+ 
+ // Done the complete update feature by Shree Harsha BK.
+>>>>>>> 76ef634fbd45c179312c63cd394c9c5bf34072bb
 function updateTotal(eventId) {
    let quantityInput = document.getElementById(`quantity${eventId}`);
    let quantity = parseInt(quantityInput.value) || 1;
