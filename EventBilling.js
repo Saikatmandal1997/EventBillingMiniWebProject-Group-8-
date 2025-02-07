@@ -45,7 +45,7 @@ function addPrice()
 
  
  
- 
+ // Done the complete update feature by Shree Harsha BK.
 function updateTotal(eventId) {
    let quantityInput = document.getElementById(`quantity${eventId}`);
    let quantity = parseInt(quantityInput.value) || 1;
