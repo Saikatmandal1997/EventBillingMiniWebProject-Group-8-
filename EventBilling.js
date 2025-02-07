@@ -44,8 +44,7 @@ function addPrice()
 };
 
  
- 
- 
+//update function created by veeresh 
 function updateTotal(eventId) {
    let quantityInput = document.getElementById(`quantity${eventId}`);
    let quantity = parseInt(quantityInput.value) || 1;
@@ -53,8 +52,10 @@ function updateTotal(eventId) {
        quantityInput.value = 1; // Prevent negative values
        quantity = 1;
    }
+	//search for any event occurred
    let event = events.find(e => e.id === eventId);
    event.quantity = quantity;
+	//multiplying the price and quantity and displayed the result.
    document.getElementById(`total${eventId}`).innerText = `₹${event.price * quantity}`;
    updateGrandTotal();
 }
@@ -65,5 +66,6 @@ function removeEvent(eventId) {
 }
 function updateGrandTotal() {
    totalCost = events.reduce((sum, event) => sum + (event.price * event.quantity), 0);
-   document.getElementById("totalCost").innerText = totalCost;
+   //Total cost is displayed to web page
+	document.getElementById("totalCost").innerText = totalCost;
 }
