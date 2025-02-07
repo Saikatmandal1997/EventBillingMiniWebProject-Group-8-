@@ -67,6 +67,8 @@ function removeEvent(eventId) {
    document.getElementById(`row${eventId}`).remove();
    updateGrandTotal();
 }
+
+//Done the complete updateGrandTotal function by Veeresh
 function updateGrandTotal() {
    totalCost = events.reduce((sum, event) => sum + (event.price * event.quantity), 0);
    //Total cost is displayed to web page
