@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Billing</title>
+<link rel="stylesheet" href="EventBilling.js">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+<h2 class="text-center">Event Billing</h2>
+
+<div class="mb-3">
+<label for="eventId" class="form-label">Event ID:</label>
+<input type="text" id="eventId" class="form-control">
+</div>
+<div class="mb-3">
+<label for="eventName" class="form-label">Event Name:</label>
+<input type="text" id="eventName" class="form-control">
+</div>
+<div class="mb-3">
+<label for="eventPrice" class="form-label">Price:</label>
+<input type="number" id="eventPrice" class="form-control">
+</div>
+<button id="addEventBtn" onclick="addPrice()" class="btn btn-primary">Add to Cart</button>
+
+<h3 class="mt-4">Event Cart</h3>
+<table class="table table-bordered mt-2">
+<thead>
+<tr>
+<th>Event ID</th>
+<th>Event Name</th>
+<th>Price</th>
+<th>Quantity</th>
+<th>Total</th>
+<th>Remove</th>
+</tr>
+</thead>
+<tbody id="tableBody">
+
+</tbody>
+</table>
+<h4>Total Cost: ₹<span id="totalCost">0</span></h4>
+</div>
+<script src="EventBilling.js"></script>
+</body>
+</html>
